@@ -11,7 +11,7 @@
   <project path="build" name="mozilla-b2g/platform_build" remote="github" revision="master">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-<project path="dalvik" name="mozilla-b2g/fake-dalvik" remote="github" revision="master" />
+  <project path="dalvik" name="mozilla-b2g/fake-dalvik" remote="github" revision="master" />
   <project path="gaia" name="mozilla-b2g/gaia" remote="github" revision="master" />
   <project path="gecko" name="mozilla/releases-mozilla-central" remote="github" revision="master" />
   <project path="gonk-misc" name="mozilla-b2g/gonk-misc" remote="github" revision="master" />
@@ -76,11 +76,6 @@
   <project name="aospX/platform_external_webrtc" path="external/webrtc" remote="github" revision="ics-devel"/>
   <project name="aospX/platform_external_wpa_supplicant_8" path="external/wpa_supplicant_8" remote="github" revision="ics-devel"/>
   <project name="aospX/platform_external_zlib" path="external/zlib" remote="github" revision="slhash"/>
-  <project name="aospX/platform_frameworks_base" path="frameworks/base" remote="github" revision="ics-devel"/>
-  <project name="aospX/platform_frameworks_ex" path="frameworks/ex" remote="github" revision="ics-devel"/>
-  <project name="aospX/platform_frameworks_compile_libbcc" path="frameworks/compile/libbcc" remote="github" revision="ics-devel"/>
-  <project name="aospX/platform_frameworks_compile_slang" path="frameworks/compile/slang" remote="github" revision="ics-devel"/>
-  <project name="aospX/platform_frameworks_media_libvideoeditor" path="frameworks/media/libvideoeditor" remote="github" revision="ics-devel"/>
   <project name="aospX/platform_hardware_libhardware" path="hardware/libhardware" remote="github" revision="ics-devel"/>
   <project name="aospX/platform_hardware_libhardware_legacy" path="hardware/libhardware_legacy" remote="github" revision="ics-devel"/>
   <project name="aospX/platform_hardware_msm7k" path="hardware/msm7k" remote="github" revision="ics-devel"/>
@@ -219,13 +214,9 @@
   <project name="platform/external/wpa_supplicant_6" path="external/wpa_supplicant_6"/>
   <project name="platform/external/xmlwriter" path="external/xmlwriter"/>
   <project name="platform/external/yaffs2" path="external/yaffs2"/>
-  <project name="platform/frameworks/compile/linkloader" path="frameworks/compile/linkloader"/>
-  <project name="platform/frameworks/opt/calendar" path="frameworks/opt/calendar"/>
-  <project name="platform/frameworks/opt/emoji" path="frameworks/opt/emoji"/>
-  <project name="platform/frameworks/opt/inputmethodcommon" path="frameworks/opt/inputmethodcommon"/>
-  <project name="platform/frameworks/opt/mailcommon" path="frameworks/opt/mailcommon"/>
-  <project name="platform/frameworks/opt/vcard" path="frameworks/opt/vcard"/>
-  <project name="platform/frameworks/support" path="frameworks/support"/>
+  <project path="frameworks/base" name="platform/frameworks/base" revision="612ca9c6a55bd932c45f5b85ae932a1b712dd914" />
+  <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
+  <project path="frameworks/support" name="platform/frameworks/support" />
   <project name="platform/hardware/invensense" path="hardware/invensense"/>
   <project name="platform/ndk" path="ndk"/>
   <project name="platform/packages/apps/0xbench" path="packages/apps/0xbench" remote="linaro-android" revision="linaro-master"/>
