@@ -82,22 +82,6 @@
   <project name="aospX/platform_hardware_qcom_gps" path="hardware/qcom/gps" remote="github" revision="ics-devel"/>
   <project name="aospX/platform_hardware_qcom_media" path="hardware/qcom/media" remote="github" revision="ics-devel"/>
   <project name="aospX/platform_libcore" path="libcore" remote="github" revision="ics-devel"/>
-  <project name="aospX/platform_packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="github" revision="ics-devel"/>
-  <project name="aospX/platform_packages_apps_Browser" path="packages/apps/Browser" remote="github" revision="ics-devel"/>
-  <project name="aospX/platform_packages_apps_Camera" path="packages/apps/Camera" remote="github" revision="ics-devel"/>
-  <project name="aospX/platform_packages_apps_Contacts" path="packages/apps/Contacts" remote="github" revision="ics-devel"/>
-  <project name="aospX/platform_packages_apps_DeskClock" path="packages/apps/DeskClock" remote="github" revision="ics-devel"/>
-  <project name="aospX/platform_packages_apps_FileManager" path="packages/apps/FileManager" remote="github" revision="ics-devel"/>
-  <project name="aospX/platform_packages_apps_Launcher2" path="packages/apps/Launcher2" remote="github" revision="ics-devel"/>
-  <project name="aospX/platform_packages_apps_Mms" path="packages/apps/Mms" remote="github" revision="ics-devel"/>
-  <project name="aospX/platform_packages_apps_Music" path="packages/apps/Music" remote="github" revision="ics-devel"/>
-  <project name="aospX/platform_packages_apps_Phone" path="packages/apps/Phone" remote="github" revision="ics-devel"/>
-  <project name="aospX/platform_packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="ics-devel"/>
-  <project name="aospX/platform_packages_apps_SoundRecorder" path="packages/apps/SoundRecorder" remote="github" revision="ics-devel"/>
-  <project name="aospX/platform_packages_apps_Superuser" path="packages/apps/Superuser" remote="github" revision="ics"/>
-  <project name="aospX/platform_packages_providers_ContactsProvider" path="packages/providers/ContactsProvider" remote="github" revision="ics-devel"/>
-  <project name="aospX/platform_packages_providers_DownloadProvider" path="packages/providers/DownloadProvider" remote="github" revision="ics-devel"/>
-  <project name="aospX/platform_packages_providers_MediaProvider" path="packages/providers/MediaProvider" remote="github" revision="ics-devel"/>
   <project name="aospX/platform_prebuilt" path="prebuilt" remote="github" revision="ics-devel"/>
   <project name="aospX/platform_system_bluetooth" path="system/bluetooth" remote="github" revision="ics-devel"/>
   <project name="aospX/platform_system_core" path="system/core" remote="github" revision="ics-devel"/>
@@ -215,48 +199,6 @@
   <project path="frameworks/support" name="platform/frameworks/support" />
   <project name="platform/hardware/invensense" path="hardware/invensense"/>
   <project name="platform/ndk" path="ndk"/>
-  <project name="platform/packages/apps/0xbench" path="packages/apps/0xbench" remote="linaro-android" revision="linaro-master"/>
-  <project name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver"/>
-  <project name="platform/packages/apps/Calculator" path="packages/apps/Calculator"/>
-  <project name="platform/packages/apps/Calendar" path="packages/apps/Calendar"/>
-  <project name="platform/packages/apps/CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver"/>
-  <project name="platform/packages/apps/CertInstaller" path="packages/apps/CertInstaller"/>
-  <project name="platform/packages/apps/Email" path="packages/apps/Email"/>
-  <project name="platform/packages/apps/Exchange" path="packages/apps/Exchange"/>
-  <project name="platform/packages/apps/Gallery" path="packages/apps/Gallery"/>
-  <project name="platform/packages/apps/Gallery2" path="packages/apps/Gallery2"/>
-  <project name="platform/packages/apps/HTMLViewer" path="packages/apps/HTMLViewer"/>
-  <project name="platform/packages/apps/KeyChain" path="packages/apps/KeyChain"/>
-  <project name="platform/packages/apps/MusicFX" path="packages/apps/MusicFX"/>
-  <project name="platform/packages/apps/Nfc" path="packages/apps/Nfc"/>
-  <project name="platform/packages/apps/PackageInstaller" path="packages/apps/PackageInstaller"/>
-  <project name="platform/packages/apps/Protips" path="packages/apps/Protips"/>
-  <project name="platform/packages/apps/Provision" path="packages/apps/Provision"/>
-  <project name="platform/packages/apps/QuickSearchBox" path="packages/apps/QuickSearchBox"/>
-  <project name="platform/packages/apps/SpareParts" path="packages/apps/SpareParts"/>
-  <project name="platform/packages/apps/SpeechRecorder" path="packages/apps/SpeechRecorder"/>
-  <project name="platform/packages/apps/Stk" path="packages/apps/Stk"/>
-  <project name="platform/packages/apps/Tag" path="packages/apps/Tag"/>
-  <project name="platform/packages/apps/VideoEditor" path="packages/apps/VideoEditor"/>
-  <project name="platform/packages/apps/VoiceDialer" path="packages/apps/VoiceDialer"/>
-  <project name="platform/packages/experimental" path="packages/experimental"/>
-  <project name="platform/packages/inputmethods/LatinIME" path="packages/inputmethods/LatinIME"/>
-  <project name="platform/packages/inputmethods/OpenWnn" path="packages/inputmethods/OpenWnn"/>
-  <project name="platform/packages/inputmethods/PinyinIME" path="packages/inputmethods/PinyinIME"/>
-  <project name="platform/packages/providers/ApplicationsProvider" path="packages/providers/ApplicationsProvider"/>
-  <project name="platform/packages/providers/CalendarProvider" path="packages/providers/CalendarProvider"/>
-  <project name="platform/packages/providers/DrmProvider" path="packages/providers/DrmProvider"/>
-  <project name="platform/packages/providers/GoogleContactsProvider" path="packages/providers/GoogleContactsProvider"/>
-  <project name="platform/packages/providers/TelephonyProvider" path="packages/providers/TelephonyProvider"/>
-  <project name="platform/packages/providers/UserDictionaryProvider" path="packages/providers/UserDictionaryProvider"/>
-  <project name="platform/packages/wallpapers/Basic" path="packages/wallpapers/Basic"/>
-  <project name="platform/packages/wallpapers/Galaxy4" path="packages/wallpapers/Galaxy4"/>
-  <project name="platform/packages/wallpapers/HoloSpiral" path="packages/wallpapers/HoloSpiral"/>
-  <project name="platform/packages/wallpapers/LivePicker" path="packages/wallpapers/LivePicker"/>
-  <project name="platform/packages/wallpapers/MagicSmoke" path="packages/wallpapers/MagicSmoke"/>
-  <project name="platform/packages/wallpapers/MusicVisualization" path="packages/wallpapers/MusicVisualization"/>
-  <project name="platform/packages/wallpapers/NoiseField" path="packages/wallpapers/NoiseField"/>
-  <project name="platform/packages/wallpapers/PhaseBeam" path="packages/wallpapers/PhaseBeam"/>
   <project name="platform/prebuilts/eclipse" path="prebuilts/eclipse"/>
   <project name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.6" path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.6"/>
   <project name="platform/prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.4.3" path="prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.4.3"/>
