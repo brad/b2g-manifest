@@ -8,7 +8,7 @@
   
   <default remote="aosp" revision="ics-plus-aosp" sync-j="4"/>
 
-  <project path="build" name="mozilla-b2g/platform_build" remote="github" revision="master">
+  <project path="build" name="b2gX/platform_build" remote="github" revision="master">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="dalvik" name="mozilla-b2g/fake-dalvik" remote="github" revision="master" />
