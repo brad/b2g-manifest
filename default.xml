@@ -6,7 +6,7 @@
   <remote fetch="git://git.linaro.org/" name="linaro"/>
   <remote fetch="git://android.git.linaro.org/" name="linaro-android"/>
   
-  <default remote="aosp" revision="ics-plus-aosp" sync-j="4"/>
+  <default remote="caf" revision="ics_chocolate" sync-j="4"/>
 
   <project path="build" name="b2gX/platform_build" remote="github" revision="master">
     <copyfile src="core/root.mk" dest="Makefile" />
