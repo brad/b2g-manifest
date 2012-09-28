@@ -12,6 +12,9 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="dalvik" name="mozilla-b2g/fake-dalvik" remote="github" revision="master" />
+  <project path="external/opensans" name="mozilla-b2g/platform_external_opensans" remote="github" revision="master" />
+  <project path="external/screencap-gonk" name="mozilla-b2g/screencap-gonk" remote="github" revision="master" />
+  <project path="external/unbootimg" name="mozilla-b2g/unbootimg" remote="github" revision="master" />
   <project path="gaia" name="mozilla-b2g/gaia" remote="github" revision="master" />
   <project path="gecko" name="mozilla/releases-mozilla-central" remote="github" revision="master" />
   <project path="gonk-misc" name="mozilla-b2g/gonk-misc" remote="github" revision="master" />
