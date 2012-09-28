@@ -73,7 +73,6 @@
   <project name="aospX/platform_hardware_qcom_gps" path="hardware/qcom/gps" remote="github" revision="ics-devel"/>
   <project name="aospX/platform_hardware_qcom_media" path="hardware/qcom/media" remote="github" revision="ics-devel"/>
   <project name="aospX/platform_libcore" path="libcore" remote="github" revision="ics-devel"/>
-  <project name="aospX/platform_prebuilt" path="prebuilt" remote="github" revision="ics-devel"/>
   <project name="aospX/platform_system_bluetooth" path="system/bluetooth" remote="github" revision="ics-devel"/>
   <project name="aospX/platform_system_core" path="system/core" remote="github" revision="ics-devel"/>
   <project name="aospX/platform_system_extras" path="system/extras" remote="github" revision="ics-devel"/>
@@ -187,6 +186,7 @@
   <project path="frameworks/support" name="platform/frameworks/support" />
   <project name="platform/hardware/invensense" path="hardware/invensense"/>
   <project name="platform/ndk" path="ndk"/>
+  <project name="platform/prebuilt" path="prebuilt"/>
   <project name="platform/vendor/qcom-opensource/v8" path="vendor/qcom/opensource/v8" remote="caf" revision="ics_chocolate"/>
   <project name="platform/vendor/qcom-opensource/webkit" path="vendor/qcom/opensource/webkit" remote="caf" revision="ics_chocolate"/>
 
