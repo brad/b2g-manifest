@@ -3,8 +3,7 @@
   <remote fetch="https://android.googlesource.com/" name="aosp"/>
   <remote fetch="git://codeaurora.org/" name="caf"/>
   <remote fetch="git://github.com/" name="github"/>
-  <remote fetch="git://git.linaro.org/" name="linaro"/>
-  <remote fetch="git://android.git.linaro.org/" name="linaro-android"/>
+  <remote fetch="git://android.git.linaro.org/" name="linaro"/>
   
   <default remote="caf" revision="ics_chocolate" sync-j="4"/>
 
