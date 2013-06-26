@@ -1,33 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="https://android.googlesource.com/" name="aosp"/>
-  <remote fetch="git://codeaurora.org/" name="caf"/>
-  <remote fetch="git://github.com/" name="github"/>
-  <remote fetch="git://android.git.linaro.org/" name="linaro"/>
-  
-  <default remote="caf" revision="ics_chocolate" sync-j="4"/>
 
-  <project path="build" name="b2gX/platform_build" remote="github" revision="master">
+  <remote  name="aosp"
+           fetch="https://android.googlesource.com/" />
+  <remote  name="b2gx"
+           fetch="git://github.com/b2gX/" />
+  <remote  name="aospx"
+           fetch="git://github.com/aospX/" />
+  <remote  name="cm"
+           fetch="git://github.com/CyanogenMod/" />
+  <remote name="b2g"
+          fetch="git://github.com/mozilla-b2g/" />
+  <remote  name="linaro"
+           fetch="http://android.git.linaro.org/git-ro/" />
+  <remote name="mozilla"
+	  fetch="git://github.com/mozilla/" />
+  <remote name="mozillaorg"
+      fetch="https://git.mozilla.org/releases" />
+  <remote name="apitrace" fetch="git://github.com/apitrace/" />
+  <default revision="refs/tags/android-4.0.4_r1.2"
+           remote="linaro"
+           sync-j="4" />
+
+  <project path="build" name="platform_build" remote="b2gx" revision="master">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="dalvik" name="mozilla-b2g/fake-dalvik" remote="github" revision="master" />
-  <project path="external/opensans" name="mozilla-b2g/platform_external_opensans" remote="github" revision="master" />
-  <project path="external/screencap-gonk" name="mozilla-b2g/screencap-gonk" remote="github" revision="master" />
-  <project path="external/unbootimg" name="mozilla-b2g/unbootimg" remote="github" revision="master" />
-  <project path="gaia" name="mozilla-b2g/gaia" remote="github" revision="master" />
-  <project path="gecko" name="mozilla/releases-mozilla-central" remote="github" revision="master" />
-  <project path="gonk-misc" name="mozilla-b2g/gonk-misc" remote="github" revision="master" />
-  <project path="hardware/qcom/display" name="mozilla-b2g/hardware_qcom_display" remote="github" revision="master" />
-  <project path="rilproxy" name="mozilla-b2g/rilproxy" remote="github" revision="master" />
+  <project path="dalvik" name="fake-dalvik" remote="b2g" revision="master" />
+  <project path="gaia" name="gaia.git" remote="mozillaorg" revision="master" />
+  <project path="gecko" name="gecko.git" remote="mozillaorg" revision="master" />
+  <project path="gonk-misc" name="gonk-misc" remote="b2g" revision="master" />
+  <project path="rilproxy" name="rilproxy" remote="b2g" revision="master" />
+  <project path="external/moztt" name="moztt" remote="b2g" revision="master" />
+  <project path="external/valgrind" name="valgrind" remote="b2g" revision="fxos" />
+  <project path="external/VEX" name="vex" remote="b2g" revision="fxos" />
+  <project path="external/apitrace" name="apitrace" remote="apitrace" revision="master" />
 
 <!-- Stock Android things -->
   <project path="abi/cpp" name="platform/abi/cpp" />
   <project path="bionic" name="platform/bionic" />
   <project path="bootable/recovery" name="platform/bootable/recovery" />
-  <project path="development" name="platform/development" />
   <project path="device/common" name="device/common" />
   <project path="device/sample" name="device/sample" />
-  <project path="external/apache-http" name="platform/external/apache-http" />
+  <project path="external/apriori" name="platform_external_apriori" remote="b2g" revision="master" />
   <project path="external/bluetooth/bluez" name="platform/external/bluetooth/bluez" />
   <project path="external/bluetooth/glib" name="platform/external/bluetooth/glib" />
   <project path="external/bluetooth/hcidump" name="platform/external/bluetooth/hcidump" />
@@ -36,7 +50,8 @@
   <project path="external/dbus" name="platform/external/dbus" />
   <project path="external/dhcpcd" name="platform/external/dhcpcd" />
   <project path="external/dnsmasq" name="platform/external/dnsmasq" />
-  <project path="external/e2fsprogs" name="platform/external/e2fsprogs" />
+  <project path="external/elfcopy" name="platform_external_elfcopy" remote="b2g" revision="master" />
+  <project path="external/elfutils" name="platform_external_elfutils" remote="b2g" revision="master" />
   <project path="external/expat" name="platform/external/expat" />
   <project path="external/fdlibm" name="platform/external/fdlibm" />
   <project path="external/flac" name="platform/external/flac" />
@@ -46,23 +61,22 @@
   <project path="external/harfbuzz" name="platform/external/harfbuzz" />
   <project path="external/icu4c" name="platform/external/icu4c" />
   <project path="external/iptables" name="platform/external/iptables" />
-  <project path="external/jhead" name="platform/external/jhead" />
   <project path="external/jpeg" name="platform/external/jpeg" />
   <project path="external/libgsm" name="platform/external/libgsm" />
   <project path="external/liblzf" name="platform/external/liblzf" />
   <project path="external/libnfc-nxp" name="platform/external/libnfc-nxp" />
   <project path="external/libnl-headers" name="platform/external/libnl-headers" />
-  <project path="external/libphonenumber" name="platform/external/libphonenumber" />
   <project path="external/libpng" name="platform/external/libpng" />
   <project path="external/libvpx" name="platform/external/libvpx" />
-  <project path="external/llvm" name="platform/external/llvm" />
   <project path="external/mksh" name="platform/external/mksh" />
+  <project path="external/opensans" name="platform_external_opensans" remote="b2g" revision="master" />
   <project path="external/openssl" name="platform/external/openssl" />
   <project path="external/protobuf" name="platform/external/protobuf" />
   <project path="external/safe-iop" name="platform/external/safe-iop" />
+  <project path="external/screencap-gonk" name="screencap-gonk" remote="b2g" revision="master" />
   <project path="external/sonivox" name="platform/external/sonivox" />
   <project path="external/speex" name="platform/external/speex" />
-  <project path="external/sqlite" name="platform/external/sqlite" revision="fb30e613139b8836fdc8e81e166cf3a76e5fa17f"/>
+  <project path="external/sqlite" name="platform/external/sqlite" />
   <project path="external/stlport" name="platform/external/stlport" />
   <project path="external/strace" name="platform/external/strace" />
   <project path="external/tagsoup" name="platform/external/tagsoup" />
@@ -74,7 +88,7 @@
   <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" />
   <project path="external/zlib" name="platform/external/zlib" />
   <project path="external/yaffs2" name="platform/external/yaffs2" />
-  <project name="platform/frameworks/base" path="frameworks/base" />
+  <project path="frameworks/base" name="platform/frameworks/base" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
   <project path="frameworks/support" name="platform/frameworks/support" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" />
@@ -90,20 +104,20 @@
   <project path="system/vold" name="platform/system/vold" />
 
 <!-- Additional parts for Glacier -->
-  <project name="SyNtheticNightmar3/htc-kernel-msm7x30" path="kernel/msm7x30" remote="github" revision="android-msm-2.6.35-ics"/>
-  <project name="SyNtheticNightmar3/platform_device_htc_glacier" path="device/htc/glacier" remote="github" revision="ics-dev"/>
-  <project name="SyNtheticNightmar3/platform_vendor_htc_glacier" path="vendor/htc/glacier" remote="github" revision="ics-dev"/>
-  <project name="CyanogenMod/android_hardware_broadcom_wlan" path="hardware/broadcom/wlan" remote="github" revision="ics"/>
-  <project name="CyanogenMod/android_hardware_ril" path="hardware/ril" remote="github" revision="ics"/>
-  <project name="aospX/platform_device_htc_common" path="device/htc/common" remote="github" revision="ics-devel"/>
-  <project name="b2gX/platform_device_htc_msm7x30-common" path="device/htc/msm7x30-common" remote="github" revision="master"/>
-  <project name="b2gX/platform_external_skia" path="external/skia" remote="github" revision="master"/>
+  <project name="htc-kernel-msm7x30" path="kernel/msm7x30" remote="b2gx" revision="android-msm-2.6.35-ics"/>
+  <project name="platform_device_htc_glacier" path="device/htc/glacier" remote="b2gx" revision="ics-dev"/>
+  <project name="platform_vendor_htc_glacier" path="vendor/htc/glacier" remote="b2gx" revision="ics-dev"/>
+  <project name="android_hardware_broadcom_wlan" path="hardware/broadcom/wlan" remote="cm" revision="ics"/>
+  <project name="android_hardware_ril" path="hardware/ril" remote="cm" revision="ics"/>
+  <project name="platform_device_htc_common" path="device/htc/common" remote="b2gx" revision="ics-devel"/>
+  <project name="platform_device_htc_msm7x30-common" path="device/htc/msm7x30-common" remote="b2gx" revision="master"/>
+  <project name="platform_external_skia" path="external/skia" remote="b2gx" revision="master"/>
   <project path="hardware/msm7k" name="platform/hardware/msm7k" />
   <project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" />
   <project path="hardware/qcom/media" name="platform/hardware/qcom/media" />
   <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" />
   <project name="platform/hardware/invensense" path="hardware/invensense"/>
-  <project name="aospX/platform_vendor_qcom_opensource_omx_mm-core" path="vendor/qcom/opensource/omx/mm-core" remote="github" revision="ics-devel"/>
-  <project name="aospX/platform_vendor_qcom_opensource_omx_mm-video" path="vendor/qcom/opensource/omx/mm-video" remote="github" revision="ics-devel"/>
-  <project name="aospX/platform_vendor_qcom_proprietary" path="vendor/qcom/proprietary" remote="github" revision="ics-devel"/>
+  <project name="platform_vendor_qcom_opensource_omx_mm-core" path="vendor/qcom/opensource/omx/mm-core" remote="aospx" revision="ics-devel"/>
+  <project name="platform_vendor_qcom_opensource_omx_mm-video" path="vendor/qcom/opensource/omx/mm-video" remote="aospx" revision="ics-devel"/>
+  <project name="platform_vendor_qcom_proprietary" path="vendor/qcom/proprietary" remote="aospx" revision="ics-devel"/>
 </manifest>
